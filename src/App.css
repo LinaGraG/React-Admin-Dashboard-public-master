@@ -1,0 +1,59 @@
+:root {
+  --yellow: linear-gradient(180deg, #7393b1 -146.42%, #ead1be -46.42%);
+  --orange: #d16c53;
+  --gray: #788097;
+  --blue: linear-gradient(180deg, #7393b1 0%, #ffffff 100%);
+  --Green : #5fb994;
+  --glass: #fffdfd1f ;
+  --boxShadow: 0px 19px 60px rgba(0, 0, 0, 0.034);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --activeItem: var(--artelak-lightocre);
+  --artelak-blue: #12284C;
+  --artelak-lightblue: #dce0e5;
+  --artelak-ocre: #cc9e6a;
+  --artelak-lightocre: #f2d9c7;
+}
+
+.App {
+  
+  
+  /* padding: 0.5rem 3.5rem; */
+  color: var(--artelak-blue);
+  background: linear-gradient(
+    106.37deg,
+    white 10%,
+    #7393b1 45%,
+    #7a8794 90%,
+    #979ea5 99%
+    
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.AppGlass {
+  display: grid;
+  height: 97%;
+  width: 97%;
+  background: var(--glass);
+  border-radius: 2rem;
+  gap: 16px;
+  grid-template-columns: 11rem auto 20rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .AppGlass{
+    grid-template-columns: 10% 50% auto;
+    overflow-y: scroll;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .AppGlass{
+    grid-template-columns: 1fr;
+  } 
+}
